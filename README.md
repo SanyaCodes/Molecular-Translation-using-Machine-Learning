@@ -1,1 +1,1 @@
-# Molecular-Translation-using-Machine-Learning
+# Molecular Translation using Machine Learning
