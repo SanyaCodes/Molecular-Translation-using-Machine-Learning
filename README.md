@@ -50,6 +50,7 @@ I used Transformer, because :
 <li> Sparse Categorical Accuracy : This metric computes the frequency with which y_pred matches y_true </li>
 
 ## Results :
+Dataset was divided into training and testing data with 80:20 ratio. The accuracy is dependent on the Levenshtein threshold and also the correctness and neatness of the image.
 
 | Phase | Accuracy |  
 | ------- | --- | 
