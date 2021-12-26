@@ -43,11 +43,11 @@ I used Transformer, because :
 
 ## Evaluation 
 
-Levenshtein distance : It is the minimum number of single-character edits required to change one word into the other
+1) Levenshtein distance : It is the minimum number of single-character edits required to change one word into the other
 <br/>
-0 or 1 : For every cell having a distance > 0, the predicted answer was termed as incorrect
+2) 0 or 1 : For every cell having a distance > 0, the predicted answer was termed as incorrect
 <br/>
-Sparse Categorical Accuracy : This metric computes the frequency with which y_pred matches y_true
+3) Sparse Categorical Accuracy : This metric computes the frequency with which y_pred matches y_true
 <br/>
 ## Results :
 Dataset was divided into training and testing data with 80:20 ratio. The accuracy is dependent on the Levenshtein threshold and also the correctness and neatness of the image.
