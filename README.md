@@ -58,4 +58,4 @@ I used Transformer, because :
 
 ## Demo :
 
-<img src="https://github.com/Ssanyachetwani/Molecular-Translation-using-Machine-Learning/blob/main/rim/Demo.png" alt="task" width=200/>
+<img src="https://github.com/Ssanyachetwani/Molecular-Translation-using-Machine-Learning/blob/main/rim/Demo.png" alt="task" width=600/>
