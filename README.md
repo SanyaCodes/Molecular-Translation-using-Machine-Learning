@@ -22,7 +22,6 @@ Augmentation is often used in image-based deep learning tasks to increase the am
 
 ### 2. Encoder - Decoder Architecture :
 The overall structure of an encoder-decoder architecture which is commonly used is as shown below-
-
 It consists of 3 parts: encoder, intermediate vector formed by encoder and decoder.
 <li> Encoder - It accepts a single element of the input sequence at each time step, processes it, collects information for that element and propagates it forward. </li> 
 <li> Intermediate vector - This is the final internal state produced from the encoder part of the model. It contains information about the entire input sequence to help the decoder make accurate predictions. </li> 
@@ -33,7 +32,30 @@ I will be using Vision Transformer (ViT), mostly because :
 <li> Receptive field of CNNs depends on the size of their filters and the number of convolutional layers used. Increasing their value increases the complexity. ViT uses tokens instead of filters. </li>
 <li> Excellent replacements for CNNs when dataset is large. </li>
 
-### 4. Patch Encoding in ViT:
-Image patches are basically the sequence tokens (like words). The PatchEncoder layer will linearly transform a patch by projecting it into a vector embedding. In short it adds a learnable attribute to the projected vector.
-<img src="https://github.com/Ssanyachetwani/Molecular-Translation-using-Machine-Learning/blob/main/rim/vit.png" alt="task" width=500/>
+### 4. Patch Encoding in ViT :
+Image patches are basically the sequence tokens (like words). The PatchEncoder layer will linearly transform a patch by projecting it into a vector embedding. In short it adds a learnable attribute to the projected vector. <br/> <br/>
+<img src="https://github.com/Ssanyachetwani/Molecular-Translation-using-Machine-Learning/blob/main/rim/vit.gif" alt="task" width=500/>
 
+### 5. Transformer as Decoder :
+I used Transformer, because :
+<li> RNN, LSTM and GRU cannot process long sequences of data if encoded information is too long, Transformers can </li>
+<li> It predicts the next word/token of the encoder output by self-attending to its own output </li>
+
+## Evaluation 
+
+<li> Levenshtein distance : It is the minimum number of single-character edits required to change one word into the other </li>
+
+<li> 0 or 1 : For every cell having a distance > 0, the predicted answer was termed as incorrect </li>
+
+<li> Sparse Categorical Accuracy : This metric computes the frequency with which y_pred matches y_true </li>
+
+## Results :
+
+| Phase | Accuracy |  
+| ------- | --- | 
+| Training | 84.3% |
+| Testing | 76.8% |
+
+## Demo :
+
+<img src="https://github.com/Ssanyachetwani/Molecular-Translation-using-Machine-Learning/blob/main/rim/demo.png" alt="task" width=200/>
